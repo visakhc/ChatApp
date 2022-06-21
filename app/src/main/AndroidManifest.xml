@@ -3,9 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.visakh.demochatapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:usesCleartextTraffic="true"
+
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
+         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,7 +19,7 @@
         tools:targetApi="31">
         <activity
             android:name=".ui.activities.MainActivity"
-            android:exported="true">
+             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
